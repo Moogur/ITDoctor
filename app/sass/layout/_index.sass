@@ -1,0 +1,298 @@
+body
+    width: 1400px
+    margin: 0 auto
+
+header
+    background-image: url("../img/maket-assets/header.jpg")
+    background-repeat: no-repeat
+
+.mainBgc
+    background-color: $WebProjectTextColor
+
+    .container
+        +container
+
+.main
+    +row-flex()
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 25px
+
+    .logo
+        +col()
+        +size(2)
+        +sprite($s-logo)
+        font-size: $LogoTextSize
+        color: $LogoTextColor
+        font-family: $Bold
+        margin-top: 25px
+
+    .nav
+        +col()
+        +size(8)
+        font-size: $MainNavTextSize
+        line-height: $MainNavTextLH
+        color: $LogoTextColor
+        font-family: $Bold
+        margin-top: 25px
+        text-align: end
+
+        li
+            display: inline-block
+            margin-left: 30px
+
+            &:first-child
+                margin-left: 0px
+
+.webProject
+    margin: 0 auto
+    padding: 180px 0 50px 0
+    +container
+
+    h2
+        font-size: $WebProjectH2Size
+        letter-spacing: 0.05em
+        color: $WebProjectTextColor
+        font-family: $Semibold
+        text-align: center
+
+    p
+        font-size: $MainNavTextLH
+        letter-spacing: 0.05em
+        color: $WebProjectTextColor
+        font-family: $Semibold
+        text-align: center
+        margin-top: 35px
+
+    .webServeces
+        margin-top: 85px
+        display: block
+        text-align: center
+
+        button
+            font-size: $MainNavTextSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $WebProjectTextColor
+            font-family: $Bold
+            margin: 30px 0 0 25px
+            padding: 25px 45px
+            box-sizing: border-box
+            background-color: transparent
+            border: 3px solid $WebProjectTextColor
+
+            &:first-child
+                margin-left: 0px
+
+    .down
+        font-size: $LogoTextSize
+        color: $WebProjectTextColor
+        font-family: $Bold
+        padding-top: 100px
+        display: block
+        text-align: center
+
+.aboutUs .container
+    +container
+    padding: 100px 0 100px 0
+
+    h2
+        font-size: $aboutUsTextH2Size
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Bold
+        text-align: center
+
+    p
+        font-size: $aboutUsTextPSize
+        line-height: $MainNavTextLH
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Regular
+        margin: 32px auto 0
+        max-width: 630px
+        text-align: center
+
+.aboutItems
+    +row-flex()
+    justify-content: space-around
+    margin-top: 80px
+
+    .aboutItem
+        +col()
+        +size(2.6)
+        margin-top: 30px
+
+        .internet
+            +sprite($s-internet)
+
+        .transfer
+            +sprite($s-transfer)
+
+        .head
+            +sprite($s-head)
+
+        .img
+            font-size: $aboutUsTextPSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Regular
+            margin: 0 auto
+
+        h3
+            font-size: $MainNavTextSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Semibold
+            text-align: center
+            margin-top: 40px
+
+        p
+            font-size: $aboutUsTextPSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Regular
+            text-align: center
+            margin-top: 20px
+
+.ourServices
+    background-color: $ourServicesBgc
+
+    .container
+        +container
+        padding: 100px 0
+
+        h2
+            font-size: $aboutUsTextH2Size
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Bold
+            text-align: center
+
+        p
+            font-size: $aboutUsTextPSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Regular
+            margin: 35px auto 0
+            max-width: 630px
+            text-align: center
+
+.ourServicesItems
+    +row-flex()
+    justify-content: space-between
+    margin-top: 80px
+
+    .ourServicesItem
+        +col()
+        +size(4)
+        padding: 55px 0 50px 0
+        margin-top: 30px
+        background-color: $WebProjectTextColor
+
+        .phone
+            +sprite($s-smartphone_black)
+
+        .img
+            font-size: $aboutUsTextPSize
+            line-height: $LogoTextSize
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Regular
+            margin: 0 auto
+
+        h3
+            font-size: $MainNavTextSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Semibold
+            text-align: center
+            margin-top: 36px
+
+        p
+            font-size: $aboutUsTextPSize
+            line-height: $LogoTextSize
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Regular
+            text-align: center
+            margin-top: 25px
+            padding: 0 50px
+
+        button
+            font-size: $MainNavTextSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Semibold
+            display: block
+            margin: 45px auto 0
+            padding: 18px 12px
+            border: 2px solid $LogoTextColor
+            background-color: transparent
+
+.latestWorks .container
+    +container
+    padding: 110px 0 50px 0
+
+    h2
+        font-size: $aboutUsTextH2Size
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Bold
+        text-align: center
+
+    p
+        font-size: $aboutUsTextPSize
+        line-height: $MainNavTextLH
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Regular
+        margin: 35px auto 0
+        max-width: 630px
+        text-align: center
+
+    .latestWorksBtn
+        display: block
+        text-align: center
+        margin-top: 70px
+
+        button
+            font-size: $aboutUsTextPSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Semibold
+            padding: 18px 22px
+            border: 2px solid $LogoTextColor
+            background-color: transparent
+            margin: 20px 0 0 20px
+
+            &:first-child
+                margin-left: 0px
+
+    .latestWorksItems
+        +row-flex()
+        margin-top: 89px
+
+        .latestWorksItem
+            +col()
+            +size(4)
+            margin-top: 30px
+
+    .latestWorksViewAll
+        margin: 130px auto 0
+        font-size: $aboutUsTextPSize
+        line-height: $MainNavTextLH
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Semibold
+        display: block
+        padding: 18px 22px
+        border: 2px solid $LogoTextColor
+        background-color: transparent
