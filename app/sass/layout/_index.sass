@@ -6,6 +6,9 @@ header
     background-image: url("../img/maket-assets/header.jpg")
     background-repeat: no-repeat
 
+button
+    cursor: pointer
+
 .mainBgc
     background-color: $WebProjectTextColor
 
@@ -290,9 +293,380 @@ header
         font-size: $aboutUsTextPSize
         line-height: $MainNavTextLH
         letter-spacing: 0.05em
-        color: $LogoTextColor
+        color: $WebProjectTextColor
         font-family: $Semibold
         display: block
-        padding: 18px 22px
-        border: 2px solid $LogoTextColor
-        background-color: transparent
+        padding: 18px 52px
+        background-color: $ourTeamItemSocialIconsColor
+
+.pricingPlan
+    background-color: $pricingPlanBgc
+
+    .container
+        +container
+        padding: 110px 0 70px 0
+
+    h2
+        font-size: $aboutUsTextH2Size
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Bold
+        text-align: center
+
+    p
+        font-size: $aboutUsTextPSize
+        line-height: $MainNavTextLH
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Regular
+        margin: 35px auto 0
+        max-width: 630px
+        text-align: center
+
+.pricingPlanItems
+    +row-flex()
+    margin-top: 80px
+
+    .pricingPlanItem
+        +col()
+        +size(4)
+        margin-top: 30px
+        background-color: $WebProjectTextColor
+
+        .imgFont
+            +sprite($s-pricing_bg)
+            text-align: center
+            overflow: hidden
+
+            .plan
+                margin: 20px 0 35px 0
+                font-size: $LogoTextSize
+                letter-spacing: 0.05em
+                color: $WebProjectTextColor
+                font-family: $Regular
+
+            .dollar
+                position: relative
+                bottom: 15px
+                margin-top: 10px
+                font-size: $LogoTextSize
+                letter-spacing: 0.05em
+                color: $WebProjectTextColor
+                font-family: $Regular
+
+            .price
+                margin-right: 5px
+                font-size: $pricingPlanPriceSize
+                letter-spacing: 0.05em
+                color: $WebProjectTextColor
+                font-family: $Regular
+
+            .inTime
+                font-size: $pricingPlanInTimeSize
+                line-height: $MainNavTextLH
+                letter-spacing: 0.05em
+                color: $WebProjectTextColor
+                font-family: $Regular
+
+        ul
+            margin-top: 45px
+            text-align: center
+
+            li
+                margin: 20px auto 0
+                padding: 12px 0
+                width: 178px
+                border-bottom: 1px solid $pricingPlanItemLiBorder
+                font-size: $pricingPlanInTimeSize
+                line-height: $MainNavTextLH
+                letter-spacing: 0.05em
+                color: $LogoTextColor
+                font-family: $Light
+
+        .orderNow
+            display: block
+            box-sizing: border-box
+            margin: 66px auto 63px
+            padding: 20px 30px
+            border: 2px solid $pricingPlanItemButtonborder
+            background: transparent
+            text-transform: uppercase
+            font-size: $MainNavTextSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Semibold
+
+.ourTeam .container
+    +container
+    padding: 110px 0 70px 0
+
+    h2
+        font-size: $aboutUsTextH2Size
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Bold
+        text-align: center
+
+    p
+        font-size: $aboutUsTextPSize
+        line-height: $MainNavTextLH
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Regular
+        margin: 35px auto 0
+        max-width: 630px
+        text-align: center
+
+.ourTeamItems
+    +row-flex()
+    margin-top: 80px
+
+    .ourTeamItem
+        +col()
+        +size(4)
+        margin-top: 30px
+
+        .isHe
+            font-size: $MainNavTextSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Semibold
+            margin-top: 35px
+            text-align: center
+
+        .post
+            font-size: $aboutUsTextPSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Regular
+            margin-top: 10px
+            text-align: center
+
+        .socialIcons
+            margin-top: 30px
+            text-align: center
+
+            .socialIcon
+                width: 50px
+                height: 50px
+                font-size: $aboutUsTextH2Size
+                line-height: 50px
+                letter-spacing: 0.05em
+                color: $ourTeamItemSocialIconsColor
+                background-color: $pricingPlanBgc
+                font-family: $Regular
+                border-radius: 10px
+                display: inline-block
+                margin-left: 20px
+
+                &:first-child
+                    margin-left: 0px
+
+.blog
+    background-color: $blogBgc
+
+    .container
+        +container
+        padding: 110px 0 110px 0
+
+        h2
+            font-size: $aboutUsTextH2Size
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Bold
+            text-align: center
+
+        p
+            font-size: $aboutUsTextPSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Regular
+            margin: 25px auto 0
+            max-width: 630px
+            text-align: center
+
+.blogItems
+    +row-flex()
+    margin-top: 100px
+
+    .blogItem
+        +col()
+        +size(6)
+
+        .seo
+            font-size: $LogoTextSize
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Semibold
+            text-align: start
+            margin: 60px 0 20px 0
+
+        .data
+            font-size: $pricingPlanInTimeSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Semibold
+            text-align: start
+            margin-right: 40px
+
+        .develop
+            font-size: $pricingPlanInTimeSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Semibold
+            text-align: start
+
+        .blogText
+            font-size: $aboutUsTextPSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $LogoTextColor
+            font-family: $Regular
+            text-align: start
+            max-width: 440px
+            margin: 22px 0 0 0
+
+    .third
+        order: 2
+
+    .four
+        order: 3
+
+    .five
+        order: 4
+
+    .six
+        order: 5
+
+.blogMoreView
+    display: block
+    box-sizing: border-box
+    margin: 125px auto 0
+    padding: 25px 50px
+    background-color: $ourTeamItemSocialIconsColor
+    text-transform: uppercase
+    font-size: $MainNavTextSize
+    line-height: $MainNavTextLH
+    letter-spacing: 0.05em
+    color: $WebProjectTextColor
+    font-family: $Bold
+
+.contactUs
+    background-image: url("../img/maket-assets/footer.jpg")
+
+    .container
+        +container
+        padding: 125px 0 80px 0
+
+        h2
+            font-size: $aboutUsTextH2Size
+            letter-spacing: 0.05em
+            color: $WebProjectTextColor
+            font-family: $Bold
+            text-align: center
+
+        p
+            font-size: $aboutUsTextPSize
+            line-height: $MainNavTextLH
+            letter-spacing: 0.05em
+            color: $WebProjectTextColor
+            font-family: $Regular
+            margin: 35px auto 0
+            max-width: 630px
+            text-align: center
+
+.congtactUsItems
+    +row-flex()
+    justify-content: space-evenly
+    margin-top: 70px
+
+    .congtactUsItem
+        +col()
+        +size(3)
+        margin-top: 30px
+
+        .imgfa
+            width: 106px
+            height: 106px
+            font-size: $congtactUsItemFaSize
+            line-height: 106px
+            letter-spacing: 0.05em
+            color: $WebProjectTextColor
+            background-color: $congtactUsItemBgc
+            font-family: $Regular
+            text-align: center
+            border-radius: 50px
+            margin: 0 auto
+
+        p
+            font-size: $MainNavTextSize
+            line-height: $congtactUsItemPLH
+            letter-spacing: 0.05em
+            color: $WebProjectTextColor
+            font-family: $Semibold
+            margin: 35px auto 0
+            max-width: 630px
+            text-align: center
+
+.congtactUsFormItems
+    +row-flex()
+    justify-content: center
+    margin-top: 43px
+
+    .name
+        +col()
+        +size(5.3)
+        margin-top: 33px
+        font-size: $MainNavTextSize
+        line-height: $congtactUsItemPLH
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Semibold
+        padding: 28px 18px
+        border-radius: 10px
+
+    .email
+        +col()
+        +size(5.3)
+        margin-top: 33px
+        font-size: $MainNavTextSize
+        line-height: $congtactUsItemPLH
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Semibold
+        padding: 28px 18px
+        border-radius: 10px
+
+    .msg
+        +col()
+        +size(10.6)
+        margin-top: 33px
+        font-size: $MainNavTextSize
+        line-height: $congtactUsItemPLH
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Semibold
+        padding: 28px 18px
+        border-radius: 10px
+        height: 323px
+        resize: none
+
+    .send
+        +col()
+        +size(2.4)
+        +offset-left(8)
+        margin-top: 33px
+        font-size: $MainNavTextSize
+        line-height: $MainNavTextLH
+        letter-spacing: 0.05em
+        color: $LogoTextColor
+        font-family: $Bold
+        padding: 25px 0
+        text-transform: uppercase
+        border-radius: 10px
