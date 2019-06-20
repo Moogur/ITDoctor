@@ -7,7 +7,7 @@ head
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.9.0/css/all.css")
     link(rel="stylesheet", href="./css/style.css")
 body
-    //+debug12
+    +debug12
     header
         article.mainBgc
             main.container
@@ -22,6 +22,8 @@ body
                         li Contact us
                         li
                             i.fas.fa-search
+                    nav.lg
+                        i.fas.fa-align-justify
         article.webProject
             section.container
                 h2 Web development project
@@ -88,17 +90,42 @@ body
             h2 Latest Works
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             div.latestWorksBtn
-                button.all ALL
+                button.all.active ALL
                 button.web WEB DESIGN
                 button.ui UI/UX DESIGN
                 button.mockups MOCKUPS
             section.latestWorksItems
-                img.latestWorksItem(src="./img/maket-assets/rectangle1.jpg")
-                img.latestWorksItem(src="./img/maket-assets/rectangle2.jpg")
-                img.latestWorksItem(src="./img/maket-assets/rectangle3.jpg")
-                img.latestWorksItem(src="./img/maket-assets/rectangle4.jpg")
-                img.latestWorksItem(src="./img/maket-assets/rectangle5.jpg")
-                img.latestWorksItem(src="./img/maket-assets/rectangle6.jpg")
+                div.latestWorksItem
+                    img(src="./img/rectangle1.jpg")
+                    div.text
+                        h4 Hand Watch
+                        p Web design
+                div.latestWorksItem
+                    img(src="./img/rectangle2.jpg")
+                    div.text
+                        h4 One Day Pass
+                        p Mockups
+                div.latestWorksItem
+                    img(src="./img/rectangle3.jpg")
+                    div.text
+                        h4 Modal T-shirt
+                        p Web design
+                div.latestWorksItem
+                    img(src="./img/rectangle4.jpg")
+                    div.text
+                        h4 Flask
+                        p Mockups
+                div.latestWorksItem
+                    img(src="./img/rectangle5.jpg")
+                    div.text
+                        h4 Eplemost
+                        p Ui/Ux Design
+                div.latestWorksItem
+                    img(src="./img/rectangle6.jpg")
+                    div.text
+                        h4 The kitchens
+                        p Ui/Ux Design
+
             button.latestWorksViewAll VIEW ALL
     article.pricingPlan
         section.container
@@ -147,7 +174,7 @@ body
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             section.ourTeamItems
                 div.ourTeamItem
-                    img.imgBgc(src="./img/maket-assets/team1.jpg")
+                    img.imgBgc(src="./img/team1.jpg")
                     h3.isHe John Doe
                     p.post General Manager
                     div.socialIcons
@@ -160,7 +187,7 @@ body
                         div.socialIcon
                             i.fab.fa-dribbble
                 div.ourTeamItem
-                    img.imgBgc(src="./img/maket-assets/team2.jpg")
+                    img.imgBgc(src="./img/team2.jpg")
                     h3.isHe Alexa Biru
                     p.post Office Director
                     div.socialIcons
@@ -173,7 +200,7 @@ body
                         div.socialIcon
                             i.fab.fa-dribbble
                 div.ourTeamItem
-                    img.imgBgc(src="./img/maket-assets/team3.jpg")
+                    img.imgBgc(src="./img/team3.jpg")
                     h3.isHe Ronobir sing
                     p.post Admin
                     div.socialIcons
@@ -191,24 +218,30 @@ body
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             section.blogItems
                 div.blogItem
-                    img.imgBgc(src="./img/maket-assets/seo1.jpg")
+                    img.imgBgc(src="./img/seo1.jpg")
                 div.blogItem
                     h3.seo SEO Quis Vestibulum
-                    span.data 14.0702017
+                    i.far.fa-calendar-alt
+                    span.data 14.07.2017
+                    i.far.fa-file
                     span.develop Development
                     p.blogText Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
                 div.blogItem.four
-                    img.imgBgc(src="./img/maket-assets/seo2.jpg")
+                    img.imgBgc(src="./img/seo2.jpg")
                 div.blogItem.third
                     h3.seo SEO Quis Vestibulum
-                    span.data 14.0702017
+                    i.far.fa-calendar-alt
+                    span.data 14.07.2017
+                    i.far.fa-file
                     span.develop Development
                     p.blogText Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
                 div.blogItem.five
-                    img.imgBgc(src="./img/maket-assets/seo3.jpg")
+                    img.imgBgc(src="./img/seo3.jpg")
                 div.blogItem.six
                     h3.seo SEO Quis Vestibulum
-                    span.data 14.0702017
+                    i.far.fa-calendar-alt
+                    span.data 14.07.2017
+                    i.far.fa-file
                     span.develop Development
                     p.blogText Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
             button.blogMoreView MORE VIEW
